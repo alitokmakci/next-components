@@ -53,3 +53,8 @@
 .xl {
     @apply w-10 h-10;
 }
+
+.label {
+    @apply w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0 absolute;
+    clip: rect(0, 0, 0, 0) !important;
+}
