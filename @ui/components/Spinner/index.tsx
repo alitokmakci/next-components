@@ -8,6 +8,8 @@ export default function Spinner({
   color = "white",
 }: SpinnerProps) {
   return (
-    <div className={classNames(styles.spinner, styles[color], styles[size])} />
+    <div className={classNames(styles.spinner, styles[color], styles[size])}>
+      <span className={styles.label}>Loading...</span>
+    </div>
   );
 }
