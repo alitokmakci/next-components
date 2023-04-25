@@ -1,0 +1,55 @@
+.white {
+    @apply border-white;
+}
+
+.primary {
+    @apply border-primary;
+}
+
+.secondary {
+    @apply border-secondary;
+}
+
+.success {
+    @apply border-success;
+}
+
+.warning {
+    @apply border-warning;
+}
+
+.error {
+    @apply border-error;
+}
+
+.info {
+    @apply border-info;
+}
+
+.dark {
+    @apply border-dark;
+}
+
+.spinner {
+    @apply animate-spin border-4 border-b-transparent inline-block rounded-full;
+}
+
+.xs {
+    @apply w-2 h-2;
+}
+
+.sm {
+    @apply w-4 h-4;
+}
+
+.md {
+    @apply w-6 h-6;
+}
+
+.lg {
+    @apply w-8 h-8;
+}
+
+.xl {
+    @apply w-10 h-10;
+}

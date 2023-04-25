@@ -1,0 +1,46 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
+  },
+  "plugins": ["react", "prettier", "@typescript-eslint"],
+  "rules": {
+    "react/react-in-jsx-scope": 0,
+    "@typescript-eslint/no-unused-vars": 1,
+    "@typescript-eslint/no-explicit-any": "off",
+    "react/jsx-props-no-spreading": 0,
+    "no-restricted-syntax": "off",
+    "no-underscore-dangle": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "react/require-default-props": "off",
+    "radix": "off",
+    "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
+    "no-unsafe-optional-chaining": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "consistent-return": 1,
+    "no-void": 1,
+    "no-return-assign": 1,
+    "react/jsx-no-useless-fragment": "off",
+    "no-continue": "off",
+    "react/no-array-index-key": "off"
+  },
+  "globals": {
+    "React": "writable"
+  }
+}
