@@ -1,4 +1,4 @@
-import { UIColor, UIColorWithWhite, UISize } from "../ui";
+import { UIColor, UIColorWithWhite, UISize } from "@ui/ui";
 
 export interface ButtonProps
   extends React.DetailedHTMLProps<

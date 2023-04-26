@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Page() {
   return (
-    <div className="flex flex-col items-center p-16 space-y-6">
+    <div className="flex flex-col items-center p-16 space-y-6 bg-gray-100">
       <h1 className="mx-auto">Buttons</h1>
 
       <h2 className="mx-auto">Colors:</h2>
@@ -143,6 +143,8 @@ export default function Page() {
 
       <div className="flex items-center justify-center w-full space-x-4">
         <Button loading />
+        <Button size="md" loading />
+        <Button size="xl" loading />
       </div>
 
       <h2 className="mx-auto">Disabled:</h2>
