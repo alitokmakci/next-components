@@ -1,0 +1,133 @@
+.primary {
+    @apply bg-primary text-white;
+}
+
+.secondary {
+    @apply bg-secondary text-white;
+}
+
+.success {
+    @apply bg-success text-white;
+}
+
+.warning {
+    @apply bg-warning text-white;
+}
+
+.error {
+    @apply bg-error text-white;
+}
+
+.info {
+    @apply bg-info text-white;
+}
+
+.dark {
+    @apply bg-dark text-white;
+}
+
+.white {
+    @apply bg-white text-text;
+}
+
+.flat {
+    @apply bg-opacity-20 text-white;
+}
+
+.flat.primary {
+    @apply text-primary;
+}
+
+.flat.secondary {
+    @apply text-secondary;
+}
+
+.flat.success {
+    @apply text-success;
+}
+
+.flat.warning {
+    @apply text-warning;
+}
+
+.flat.error {
+    @apply text-error;
+}
+
+.flat.info {
+    @apply text-info;
+}
+
+.flat.dark {
+    @apply text-dark;
+}
+
+.flat.white {
+    @apply text-text bg-opacity-100;
+}
+
+.md {
+    @apply px-2 py-px text-sm;
+}
+
+.lg {
+    @apply px-2.5 py-0.5 text-base;
+}
+
+.xl {
+    @apply px-3 py-1 text-base;
+}
+
+.tag {
+    @apply font-medium rounded-lg inline-flex items-center justify-center transition-all duration-300;
+}
+
+.close {
+    @apply relative bg-white bg-opacity-30 w-3 h-3 inline-flex items-center justify-center rounded-full ml-1 after:h-1/2 after:w-px after:top-1/2 after:left-1/2 after:block after:absolute after:rotate-45 after:-translate-y-1/2 after:-translate-x-1/2 after:origin-center after:bg-white before:h-px before:w-1/2 before:top-1/2 before:left-1/2 before:block before:absolute before:rotate-45 before:-translate-y-1/2 before:-translate-x-1/2 before:origin-center before:bg-white;
+}
+
+.flat.primary .close {
+    @apply bg-primary text-white;
+}
+.flat.secondary .close {
+    @apply bg-secondary text-white;
+}
+.flat.success .close {
+    @apply bg-success text-white;
+}
+.flat.warning .close {
+    @apply bg-warning text-white;
+}
+.flat.error .close {
+    @apply bg-error text-white;
+}
+.flat.info .close {
+    @apply bg-info text-white;
+}
+.flat.dark .close {
+    @apply bg-dark text-white;
+}
+
+.hiddenTag {
+    @apply scale-0 opacity-0;
+}
+
+.none {
+    @apply hidden;
+}
+
+.tagGroup {
+    @apply inline-flex items-center;
+}
+
+.tagGroup .tag:first-child {
+    @apply rounded-r-none;
+}
+
+.tagGroup .tag:not(:first-child):not(:last-child) {
+    @apply rounded-none;
+}
+
+.tagGroup .tag:last-child {
+    @apply rounded-l-none;
+}

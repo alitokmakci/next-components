@@ -15,6 +15,7 @@ module.exports = {
         warning: '#ffba00',
         info: '#38bdf8',
         dark: '#020617',
+        text: '#334155',
       }
     },
   },
