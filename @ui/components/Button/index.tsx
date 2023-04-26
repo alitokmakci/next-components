@@ -7,27 +7,25 @@ import Spinner from "@ui/components/Spinner";
 import useRippleEffect from "@ui/hooks/useRippleEffect";
 import { UIColorWithWhite } from "@ui/ui";
 
-export default function Button(props: ButtonProps) {
-  const {
-    className,
-    color = "primary",
-    size = "md",
-    bordered,
-    children,
-    flat,
-    square,
-    pill,
-    block,
-    loading,
-    spinnerColor,
-    ...buttonProps
-  } = props;
-
+export default function Button({
+  className,
+  color = "primary",
+  size = "md",
+  bordered,
+  children,
+  flat,
+  square,
+  pill,
+  block,
+  loading,
+  spinnerColor,
+  ...buttonProps
+}: ButtonProps) {
   const buttonRef = useRef<HTMLButtonElement>(null);
 
   useRippleEffect("." + styles.button);
 
-  const getSpinnerColor = (): UIColorWithWhite => {
+  function getSpinnerColor(): UIColorWithWhite {
     if (spinnerColor) {
       return spinnerColor;
     }
@@ -37,7 +35,7 @@ export default function Button(props: ButtonProps) {
     }
 
     return "white";
-  };
+  }
 
   return (
     <button
