@@ -15,6 +15,12 @@ export type UISizeDownMD = "xs" | "sm";
 
 export type UISize = UISizeDownMD | UISizeUpMD;
 
+export type UIPosition =
+  | "top-left"
+  | "top-right"
+  | "bottom-left"
+  | "bottom-right";
+
 export interface UIConfig {
   buttonRippleEffect: boolean;
 }
