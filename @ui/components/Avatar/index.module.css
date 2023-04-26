@@ -1,0 +1,119 @@
+.xs {
+    @apply w-8 h-8 text-base;
+}
+
+.sm {
+    @apply w-10 h-10 text-lg;
+}
+
+.md {
+    @apply w-12 h-12 text-xl;
+}
+
+.lg {
+    @apply w-14 h-14 text-xl;
+}
+
+.xl {
+    @apply w-16 h-16 text-2xl;
+}
+
+.avatar {
+    @apply inline-flex items-center justify-center rounded-md font-semibold tracking-wide relative;
+}
+
+.primary {
+    @apply bg-primary text-white;
+}
+
+.secondary {
+    @apply bg-secondary text-white;
+}
+
+.success {
+    @apply bg-success text-white;
+}
+
+.warning {
+    @apply bg-warning text-white;
+}
+
+.info {
+    @apply bg-info text-white;
+}
+
+.error {
+    @apply bg-error text-white;
+}
+
+.dark {
+    @apply bg-dark text-white;
+}
+
+.white {
+    @apply bg-white text-text;
+}
+
+.flat {
+    @apply bg-opacity-20;
+}
+
+.flat.primary {
+    @apply text-primary;
+}
+
+.flat.secondary {
+    @apply text-secondary;
+}
+
+.flat.success {
+    @apply text-success;
+}
+
+.flat.warning {
+    @apply text-warning;
+}
+
+.flat.info {
+    @apply text-info;
+}
+
+.flat.error {
+    @apply text-error;
+}
+
+.flat.dark {
+    @apply text-dark;
+}
+
+.square {
+    @apply rounded-none;
+}
+
+.circle {
+    @apply rounded-full;
+}
+
+.img {
+    @apply w-full h-full object-cover rounded-[inherit];
+}
+
+.dot {
+    @apply absolute flex items-center justify-center min-w-[1rem] min-h-[1rem] text-[0.7rem] leading-[0.9rem] rounded-full border-2 border-white px-1;
+}
+
+.top-left {
+    @apply -top-2 -left-2;
+}
+
+.top-right {
+    @apply -top-2 -right-2;
+}
+
+.bottom-left {
+    @apply -bottom-2 -left-2;
+}
+
+.bottom-right {
+    @apply -bottom-2 -right-2;
+}
