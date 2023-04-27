@@ -1,0 +1,7 @@
+.formItem {
+    @apply flex flex-col mb-6;
+}
+
+.horizontal {
+    @apply !flex-row;
+}
