@@ -1,0 +1,587 @@
+.row {
+    @apply flex flex-wrap;
+}
+
+.gapX-0 {
+    @apply -mx-0;
+}
+
+.gapX-1 {
+    @apply -mx-0.5;
+}
+
+.gapX-2 {
+    @apply -mx-1;
+}
+
+.gapX-3 {
+    @apply -mx-1.5;
+}
+
+.gapX-4 {
+    @apply -mx-2;
+}
+
+.gapX-5 {
+    @apply -mx-2.5;
+}
+
+.gapX-6 {
+    @apply -mx-3;
+}
+
+.gapX-7 {
+    @apply -mx-3.5;
+}
+
+.gapX-8 {
+    @apply -mx-4;
+}
+
+.gapX-9 {
+    @apply -mx-4.5;
+}
+
+.gapX-10 {
+    @apply -mx-5;
+}
+
+.gapX-11 {
+    @apply -mx-5.5;
+}
+.gapX-12 {
+    @apply -mx-6;
+}
+
+.gapY-0 {
+    @apply -mt-0;
+}
+
+.gapY-1 {
+    @apply -mt-1;
+}
+
+.gapY-2 {
+    @apply -mt-2;
+}
+
+.gapY-3 {
+    @apply -mt-3;
+}
+
+.gapY-4 {
+    @apply -mt-4;
+}
+
+.gapY-5 {
+    @apply -mt-5;
+}
+
+.gapY-6 {
+    @apply -mt-6;
+}
+
+.gapY-7 {
+    @apply -mt-7;
+}
+
+.gapY-8 {
+    @apply -mt-8;
+}
+
+.gapY-9 {
+    @apply -mt-9;
+}
+
+.gapY-10 {
+    @apply -mt-10;
+}
+
+.gapY-11 {
+    @apply -mt-11;
+}
+
+.gapY-12 {
+    @apply -mt-12;
+}
+
+.autoCols {
+    @apply grid grid-flow-col auto-cols-auto;
+}
+
+.row:not(.autoCols) .column {
+    @apply basis-auto grow-0 shrink-0 w-1/12;
+}
+
+.column {
+    @apply basis-0 grow-[1] max-w-[100%];
+}
+
+.contentWidth {
+    @apply basis-auto grow-0 shrink-0 !w-auto;
+}
+
+.gapX-0 .column {
+    @apply px-0;
+}
+
+.gapX-1 .column {
+    @apply px-0.5;
+}
+
+.gapX-2 .column {
+    @apply px-1;
+}
+
+.gapX-3 .column {
+    @apply px-1.5;
+}
+
+.gapX-4 .column {
+    @apply px-2;
+}
+
+.gapX-5 .column {
+    @apply px-2.5;
+}
+
+.gapX-6 .column {
+    @apply px-3;
+}
+
+.gapX-7 .column {
+    @apply px-3.5;
+}
+
+.gapX-8 .column {
+    @apply px-4;
+}
+
+.gapX-9 .column {
+    @apply px-4.5;
+}
+
+.gapX-10 .column {
+    @apply px-5;
+}
+
+.gapX-11 .column {
+    @apply px-5.5;
+}
+
+.gapX-12 .column {
+    @apply px-6;
+}
+
+.gapY-0 .column {
+    @apply mt-0;
+}
+
+.gapY-1 .column {
+    @apply mt-1;
+}
+
+.gapY-2 .column {
+    @apply mt-2;
+}
+
+.gapY-3 .column {
+    @apply mt-3;
+}
+
+.gapY-4 .column {
+    @apply mt-4;
+}
+
+.gapY-5 .column {
+    @apply mt-5;
+}
+
+.gapY-6 .column {
+    @apply mt-6;
+}
+
+.gapY-7 .column {
+    @apply mt-7;
+}
+
+.gapY-8 .column {
+    @apply mt-8;
+}
+
+.gapY-9 .column {
+    @apply mt-9;
+}
+
+.gapY-10 .column {
+    @apply mt-10;
+}
+
+.gapY-11 .column {
+    @apply mt-11;
+}
+
+.gapY-12 .column {
+    @apply mt-12;
+}
+
+.orderFirst {
+    @apply -order-1;
+}
+
+.order1 {
+    @apply order-1;
+}
+
+.order2 {
+    @apply order-2;
+}
+
+.order3 {
+    @apply order-3;
+}
+
+.order4 {
+    @apply order-4;
+}
+
+.order5 {
+    @apply order-5;
+}
+
+.order6 {
+    @apply order-6;
+}
+
+.order7 {
+    @apply order-7;
+}
+
+.order8 {
+    @apply order-8;
+}
+
+.order9 {
+    @apply order-8;
+}
+
+.order10 {
+    @apply order-8;
+}
+
+.order11 {
+    @apply order-8;
+}
+
+.orderLast,
+.order12 {
+    @apply order-12;
+}
+
+.span1 {
+    @apply basis-auto grow-0 shrink-0 !w-1/12;
+}
+
+.span2 {
+    @apply basis-auto grow-0 shrink-0 !w-1/6;
+}
+
+.span3 {
+    @apply basis-auto grow-0 shrink-0 !w-1/4;
+}
+
+.span4 {
+    @apply basis-auto grow-0 shrink-0 !w-1/3;
+}
+
+.span5 {
+    @apply basis-auto grow-0 shrink-0 !w-5/12;
+}
+
+.span6 {
+    @apply basis-auto grow-0 shrink-0 !w-1/2;
+}
+
+.span7 {
+    @apply basis-auto grow-0 shrink-0 !w-7/12;
+}
+
+.span8 {
+    @apply basis-auto grow-0 shrink-0 !w-8/12;
+}
+
+.span9 {
+    @apply basis-auto grow-0 shrink-0 !w-9/12;
+}
+
+.span10 {
+    @apply basis-auto grow-0 shrink-0 !w-10/12;
+}
+
+.span11 {
+    @apply basis-auto grow-0 shrink-0 !w-11/12;
+}
+
+.span12 {
+    @apply basis-auto grow-0 shrink-0 !w-full;
+}
+
+.offset1 {
+    @apply ml-[calc(100%*(1/12))];
+}
+
+.offset2 {
+    @apply ml-[calc(100%*(2/12))];
+}
+
+.offset3 {
+    @apply ml-[calc(100%*(3/12))];
+}
+
+.offset4 {
+    @apply ml-[calc(100%*(4/12))];
+}
+
+.offset5 {
+    @apply ml-[calc(100%*(5/12))];
+}
+
+.sm1 {
+    @apply basis-auto grow-0 shrink-0 sm:!w-1/12;
+}
+
+.sm2 {
+    @apply basis-auto grow-0 shrink-0 sm:!w-1/6;
+}
+
+.sm3 {
+    @apply basis-auto grow-0 shrink-0 sm:!w-1/4;
+}
+
+.sm4 {
+    @apply basis-auto grow-0 shrink-0 sm:!w-1/3;
+}
+
+.sm5 {
+    @apply basis-auto grow-0 shrink-0 sm:!w-5/12;
+}
+
+.sm6 {
+    @apply basis-auto grow-0 shrink-0 sm:!w-1/2;
+}
+
+.sm7 {
+    @apply basis-auto grow-0 shrink-0 sm:!w-7/12;
+}
+
+.sm8 {
+    @apply basis-auto grow-0 shrink-0 sm:!w-8/12;
+}
+
+.sm9 {
+    @apply basis-auto grow-0 shrink-0 sm:!w-9/12;
+}
+
+.sm10 {
+    @apply basis-auto grow-0 shrink-0 sm:!w-10/12;
+}
+
+.sm11 {
+    @apply basis-auto grow-0 shrink-0 sm:!w-11/12;
+}
+
+.sm12 {
+    @apply basis-auto grow-0 shrink-0 sm:!w-full;
+}
+
+.md1 {
+    @apply basis-auto grow-0 shrink-0 md:!w-1/12;
+}
+
+.md2 {
+    @apply basis-auto grow-0 shrink-0 md:!w-1/6;
+}
+
+.md3 {
+    @apply basis-auto grow-0 shrink-0 md:!w-1/4;
+}
+
+.md4 {
+    @apply basis-auto grow-0 shrink-0 md:!w-1/3;
+}
+
+.md5 {
+    @apply basis-auto grow-0 shrink-0 md:!w-5/12;
+}
+
+.md6 {
+    @apply basis-auto grow-0 shrink-0 md:!w-1/2;
+}
+
+.md7 {
+    @apply basis-auto grow-0 shrink-0 md:!w-7/12;
+}
+
+.md8 {
+    @apply basis-auto grow-0 shrink-0 md:!w-8/12;
+}
+
+.md9 {
+    @apply basis-auto grow-0 shrink-0 md:!w-9/12;
+}
+
+.md10 {
+    @apply basis-auto grow-0 shrink-0 md:!w-10/12;
+}
+
+.md11 {
+    @apply basis-auto grow-0 shrink-0 md:!w-11/12;
+}
+
+.md12 {
+    @apply basis-auto grow-0 shrink-0 md:!w-full;
+}
+
+.lg1 {
+    @apply basis-auto grow-0 shrink-0 lg:!w-1/12;
+}
+
+.lg2 {
+    @apply basis-auto grow-0 shrink-0 lg:!w-1/6;
+}
+
+.lg3 {
+    @apply basis-auto grow-0 shrink-0 lg:!w-1/4;
+}
+
+.lg4 {
+    @apply basis-auto grow-0 shrink-0 lg:!w-1/3;
+}
+
+.lg5 {
+    @apply basis-auto grow-0 shrink-0 lg:!w-5/12;
+}
+
+.lg6 {
+    @apply basis-auto grow-0 shrink-0 lg:!w-1/2;
+}
+
+.lg7 {
+    @apply basis-auto grow-0 shrink-0 lg:!w-7/12;
+}
+
+.lg8 {
+    @apply basis-auto grow-0 shrink-0 lg:!w-8/12;
+}
+
+.lg9 {
+    @apply basis-auto grow-0 shrink-0 lg:!w-9/12;
+}
+
+.lg10 {
+    @apply basis-auto grow-0 shrink-0 lg:!w-10/12;
+}
+
+.lg11 {
+    @apply basis-auto grow-0 shrink-0 lg:!w-11/12;
+}
+
+.lg12 {
+    @apply basis-auto grow-0 shrink-0 lg:!w-full;
+}
+
+.xl1 {
+    @apply basis-auto grow-0 shrink-0 xl:!w-1/12;
+}
+
+.xl2 {
+    @apply basis-auto grow-0 shrink-0 xl:!w-1/6;
+}
+
+.xl3 {
+    @apply basis-auto grow-0 shrink-0 xl:!w-1/4;
+}
+
+.xl4 {
+    @apply basis-auto grow-0 shrink-0 xl:!w-1/3;
+}
+
+.xl5 {
+    @apply basis-auto grow-0 shrink-0 xl:!w-5/12;
+}
+
+.xl6 {
+    @apply basis-auto grow-0 shrink-0 xl:!w-1/2;
+}
+
+.xl7 {
+    @apply basis-auto grow-0 shrink-0 xl:!w-7/12;
+}
+
+.xl8 {
+    @apply basis-auto grow-0 shrink-0 xl:!w-8/12;
+}
+
+.xl9 {
+    @apply basis-auto grow-0 shrink-0 xl:!w-9/12;
+}
+
+.xl10 {
+    @apply basis-auto grow-0 shrink-0 xl:!w-10/12;
+}
+
+.xl11 {
+    @apply basis-auto grow-0 shrink-0 xl:!w-11/12;
+}
+
+.xl12 {
+    @apply basis-auto grow-0 shrink-0 xl:!w-full;
+}
+
+.xxl1 {
+    @apply basis-auto grow-0 shrink-0 2xl:!w-1/12;
+}
+
+.xxl2 {
+    @apply basis-auto grow-0 shrink-0 2xl:!w-1/6;
+}
+
+.xxl3 {
+    @apply basis-auto grow-0 shrink-0 2xl:!w-1/4;
+}
+
+.xxl4 {
+    @apply basis-auto grow-0 shrink-0 2xl:!w-1/3;
+}
+
+.xxl5 {
+    @apply basis-auto grow-0 shrink-0 2xl:!w-5/12;
+}
+
+.xxl6 {
+    @apply basis-auto grow-0 shrink-0 2xl:!w-1/2;
+}
+
+.xxl7 {
+    @apply basis-auto grow-0 shrink-0 2xl:!w-7/12;
+}
+
+.xxl8 {
+    @apply basis-auto grow-0 shrink-0 2xl:!w-8/12;
+}
+
+.xxl9 {
+    @apply basis-auto grow-0 shrink-0 2xl:!w-9/12;
+}
+
+.xxl10 {
+    @apply basis-auto grow-0 shrink-0 2xl:!w-10/12;
+}
+
+.xxl11 {
+    @apply basis-auto grow-0 shrink-0 2xl:!w-11/12;
+}
+
+.xxl12 {
+    @apply basis-auto grow-0 shrink-0 2xl:!w-full;
+}

@@ -4,6 +4,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './@ui/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -16,6 +17,10 @@ module.exports = {
         info: '#38bdf8',
         dark: '#020617',
         text: '#334155',
+      },
+      spacing: {
+        '4.5': '1.125rem',
+        '5.5': '1.375rem',
       }
     },
   },
