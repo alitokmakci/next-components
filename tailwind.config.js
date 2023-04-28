@@ -17,6 +17,8 @@ module.exports = {
         info: '#38bdf8',
         dark: '#020617',
         text: '#334155',
+        border: '#cbd5e1',
+        input: '#e4e4e7'
       },
       spacing: {
         '4.5': '1.125rem',

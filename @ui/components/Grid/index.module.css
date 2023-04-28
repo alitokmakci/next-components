@@ -346,6 +346,27 @@
     @apply ml-[calc(100%*(5/12))];
 }
 
+.offset6 {
+    @apply ml-[calc(100%*(6/12))];
+}
+.offset7 {
+    @apply ml-[calc(100%*(7/12))];
+}
+.offset8 {
+    @apply ml-[calc(100%*(8/12))];
+}
+.offset9 {
+    @apply ml-[calc(100%*(9/12))];
+}
+.offset10 {
+    @apply ml-[calc(100%*(10/12))];
+}
+.offset11 {
+    @apply ml-[calc(100%*(11/12))];
+}
+.offset12 {
+    @apply ml-[calc(100%*(12/12))];
+}
 .sm1 {
     @apply basis-auto grow-0 shrink-0 sm:!w-1/12;
 }

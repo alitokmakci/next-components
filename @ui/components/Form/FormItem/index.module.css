@@ -5,3 +5,11 @@
 .horizontal {
     @apply !flex-row;
 }
+
+.error .input {
+    @apply border-error outline-error;
+}
+
+.error .label {
+    @apply text-error;
+}

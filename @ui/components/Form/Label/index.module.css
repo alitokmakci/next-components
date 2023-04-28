@@ -1,0 +1,39 @@
+.primary {
+    @apply text-primary;
+}
+
+.secondary {
+    @apply text-secondary;
+}
+
+.success {
+    @apply text-success;
+}
+
+.error {
+    @apply text-error;
+}
+
+.warning {
+    @apply text-warning;
+}
+
+.info {
+    @apply text-info;
+}
+
+.dark {
+    @apply text-dark;
+}
+
+.text {
+    @apply text-text;
+}
+
+.label {
+    @apply mb-1;
+}
+
+.required {
+    @apply text-error mr-1;
+}
