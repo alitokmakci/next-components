@@ -1,0 +1,15 @@
+.input {
+    @apply border border-border px-2 py-2 rounded-md outline-primary disabled:bg-gray-200 disabled:text-gray-600;
+}
+
+.noOutline {
+    @apply outline-none;
+}
+
+.pill {
+    @apply rounded-full px-4;
+}
+
+.flat {
+    @apply bg-input border-none;
+}

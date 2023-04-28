@@ -42,8 +42,10 @@ export default function Page() {
         <Column>
           <div className="bg-primary">This is an example column</div>
         </Column>
-        <Column>
-          <div className="bg-primary">This is an example column</div>
+        <Column offset={2}>
+          <div className="bg-primary">
+            This is an example column with offset 2
+          </div>
         </Column>
         <Column>
           <div className="bg-primary">This is an example column</div>

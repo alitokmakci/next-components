@@ -7,6 +7,8 @@ export type UIColor =
   | "info"
   | "dark";
 
+export type UITextColor = UIColor | "text";
+
 export type UIColorWithWhite = UIColor | "white";
 
 export type UISizeUpMD = "md" | "lg" | "xl";
