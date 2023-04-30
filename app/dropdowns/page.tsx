@@ -12,11 +12,14 @@ export default function Page() {
     <Container>
       <Dropdown>
         <DropdownToggle>
-          <Button>Deneme</Button>
+          <Button>Dropdown Button</Button>
         </DropdownToggle>
 
         <DropdownMenu>
-          <DropdownItem>Test</DropdownItem>
+          <DropdownItem>Action</DropdownItem>
+          <DropdownItem>Action 2</DropdownItem>
+          <DropdownItem>Action 3</DropdownItem>
+          <DropdownItem>Action 4</DropdownItem>
         </DropdownMenu>
       </Dropdown>
     </Container>

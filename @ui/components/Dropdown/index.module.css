@@ -7,7 +7,7 @@
 }
 
 .dropdown {
-    @apply relative;
+    @apply relative inline-block;
 }
 
 .item {
