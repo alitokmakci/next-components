@@ -1,0 +1,15 @@
+.show {
+    @apply !block;
+}
+
+.menu {
+    @apply absolute top-[calc(100%+0.5rem)] hidden left-0 w-72 p-2 bg-white border-gray-200 shadow-md rounded-md border;
+}
+
+.dropdown {
+    @apply relative;
+}
+
+.item {
+    @apply p-2 hover:bg-gray-100 cursor-pointer rounded-md text-gray-600 hover:text-dark;
+}
