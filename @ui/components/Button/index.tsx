@@ -6,6 +6,7 @@ import styles from "./index.module.css";
 import Spinner from "@ui/components/Spinner";
 import useRippleEffect from "@ui/hooks/useRippleEffect";
 import { UIColorWithWhite } from "@ui/ui";
+import { uiConfig } from "@ui/ui.config";
 
 export default function Button({
   className,
@@ -19,11 +20,14 @@ export default function Button({
   block,
   loading,
   spinnerColor,
+  noRipple = false,
   ...buttonProps
 }: ButtonProps) {
   const buttonRef = useRef<HTMLButtonElement>(null);
 
-  useRippleEffect("." + styles.button);
+  useRippleEffect(
+    uiConfig.buttonRippleEffect && !noRipple ? "." + styles.button : ""
+  );
 
   function getSpinnerColor(): UIColorWithWhite {
     if (spinnerColor) {

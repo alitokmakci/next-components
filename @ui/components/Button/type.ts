@@ -14,4 +14,5 @@ export interface ButtonProps
   block?: boolean;
   loading?: boolean;
   spinnerColor?: UIColorWithWhite;
+  noRipple?: boolean;
 }

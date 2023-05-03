@@ -1,0 +1,19 @@
+.modal {
+    @apply fixed inset-0 bg-black/70 h-screen z-[100] overflow-y-auto w-screen;
+}
+
+.body {
+    @apply p-6 relative z-[100] my-10 bg-white rounded-lg mx-auto max-w-3xl;
+}
+
+.close {
+    @apply absolute flex items-center justify-center w-6 h-6 text-base leading-4 text-gray-600 rounded-full top-4 right-4;
+}
+
+.fullScreen {
+    @apply inset-4;
+}
+
+.closeIcon {
+    @apply relative bg-dark bg-opacity-30 w-6 h-6 min-w-[1.5rem] max-w-[1.5rem] inline-flex items-center justify-center rounded-full ml-1 after:h-1/2 after:w-px after:top-1/2 after:left-1/2 after:block after:absolute after:rotate-45 after:-translate-y-1/2 after:-translate-x-1/2 after:origin-center after:bg-white before:h-px before:w-1/2 before:top-1/2 before:left-1/2 before:block before:absolute before:rotate-45 before:-translate-y-1/2 before:-translate-x-1/2 before:origin-center before:bg-white;
+}

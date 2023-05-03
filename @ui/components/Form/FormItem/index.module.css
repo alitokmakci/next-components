@@ -2,6 +2,10 @@
     @apply flex flex-col mb-6;
 }
 
+.formItem:last-child {
+    @apply mb-0;
+}
+
 .horizontal {
     @apply !flex-row;
 }

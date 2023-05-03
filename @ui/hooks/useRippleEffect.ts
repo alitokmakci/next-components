@@ -35,11 +35,7 @@ export default function useRippleEffect(querySelector: string) {
   useEffect(() => {
     const elements = document.querySelectorAll(querySelector);
 
-    if (uiConfig.buttonRippleEffect) {
-      elements.forEach((element) =>
-        element.addEventListener("click", listener)
-      );
-    }
+    elements.forEach((element) => element.addEventListener("click", listener));
 
     return () => {
       elements.forEach((element) =>

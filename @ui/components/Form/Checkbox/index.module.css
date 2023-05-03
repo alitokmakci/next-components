@@ -1,0 +1,122 @@
+.checkbox {
+    @apply relative flex items-center;
+}
+
+.input {
+    @apply absolute inset-0 opacity-0 cursor-pointer;
+}
+
+.box {
+    @apply border-2 border-border h-5 w-5 rounded flex items-center justify-center transition-all;
+}
+
+.circle {
+    @apply rounded-full;
+}
+
+.label {
+    @apply ml-2;
+}
+
+.check {
+    @apply opacity-0 rotate-45 border-b-2 border-r-2 border-white w-1.5 h-2.5 mb-0.5 transition-all duration-300;
+}
+
+.checkbox:has(.input:checked) .check {
+    @apply opacity-100;
+}
+
+.primary .box.bordered,
+.checkbox:has(.input:checked).primary .box.box.bordered .check,
+.checkbox:hover.primary .box:not(.bordered),
+.checkbox:has(.input:checked).primary .box:not(.bordered),
+.primary .flat .check {
+    @apply border-primary;
+}
+
+.checkbox:has(.input:checked).primary .box:not(.bordered),
+.checkbox.primary:hover .flat {
+    @apply bg-primary;
+}
+
+.secondary .box.bordered,
+.checkbox:has(.input:checked).secondary .box.box.bordered .check,
+.checkbox:hover.secondary .box:not(.bordered),
+.checkbox:has(.input:checked).secondary .box:not(.bordered),
+.secondary .flat .check {
+    @apply border-secondary;
+}
+
+.checkbox:has(.input:checked).secondary .box:not(.bordered),
+.checkbox.secondary:hover .flat {
+    @apply bg-secondary;
+}
+
+.success .box.bordered,
+.checkbox:has(.input:checked).success .box.box.bordered .check,
+.checkbox:hover.success .box:not(.bordered),
+.checkbox:has(.input:checked).success .box:not(.bordered),
+.success .flat .check {
+    @apply border-success;
+}
+
+.checkbox:has(.input:checked).success .box:not(.bordered),
+.checkbox.success:hover .flat {
+    @apply bg-success;
+}
+
+.warning .box.bordered,
+.checkbox:has(.input:checked).warning .box.box.bordered .check,
+.checkbox:hover.warning .box:not(.bordered),
+.checkbox:has(.input:checked).warning .box:not(.bordered),
+.warning .flat .check {
+    @apply border-warning;
+}
+
+.checkbox:has(.input:checked).warning .box:not(.bordered),
+.checkbox.warning:hover .flat {
+    @apply bg-warning;
+}
+
+.error .box.bordered,
+.checkbox:has(.input:checked).error .box.box.bordered .check,
+.checkbox:hover.error .box:not(.bordered),
+.checkbox:has(.input:checked).error .box:not(.bordered),
+.error .flat .check {
+    @apply border-error;
+}
+
+.checkbox:has(.input:checked).error .box:not(.bordered),
+.checkbox.error:hover .flat {
+    @apply bg-error;
+}
+
+.info .box.bordered,
+.checkbox:has(.input:checked).info .box.box.bordered .check,
+.checkbox:hover.info .box:not(.bordered),
+.checkbox:has(.input:checked).info .box:not(.bordered),
+.info .flat .check {
+    @apply border-info;
+}
+
+.checkbox:has(.input:checked).info .box:not(.bordered),
+.checkbox.info:hover .flat {
+    @apply bg-info;
+}
+
+.dark .box.bordered,
+.checkbox:has(.input:checked).dark .box.box.bordered .check,
+.checkbox:hover.dark .box:not(.bordered),
+.checkbox:has(.input:checked).dark .box:not(.bordered),
+.dark .flat .check {
+    @apply border-dark;
+}
+
+.checkbox:has(.input:checked).dark .box:not(.bordered),
+.checkbox.dark:hover .flat {
+    @apply bg-dark;
+}
+
+.flat.box {
+    @apply !bg-opacity-20;
+}

@@ -4,8 +4,8 @@ import { DropdownItemProps, DropdownToggleProps } from "./type";
 import styles from "./index.module.css";
 import classNames from "classnames";
 import useClickOutside from "@ui/hooks/useClickOutside";
-import { useRouter } from "next/router";
 import Link from "next/link";
+import useEvent from "@ui/hooks/useEvent";
 
 export default function Dropdown({ children }: { children: React.ReactNode }) {
   const dropdownRef = useRef<HTMLDivElement>(null);
