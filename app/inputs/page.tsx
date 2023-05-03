@@ -60,7 +60,11 @@ export default function Page() {
                 onValidationEvent={setValidationError}
               />
             </FormItem>
-            <span>The value is: {number}</span>
+            <span>
+              {validationError
+                ? "There is an error"
+                : " The value is:" + number}
+            </span>
           </Column>
         </Row>
       </Container>
