@@ -1,0 +1,61 @@
+.progressbar {
+    @apply overflow-hidden rounded-full bg-gray-200 w-full;
+}
+
+.progress {
+    @apply text-white overflow-hidden text-right px-4 rounded-full flex items-center justify-end relative;
+}
+
+.primary {
+    @apply bg-primary;
+}
+
+.secondary {
+    @apply bg-secondary;
+}
+
+.success {
+    @apply bg-success;
+}
+
+.warning {
+    @apply bg-warning;
+}
+
+.info {
+    @apply bg-info;
+}
+
+.error {
+    @apply bg-error;
+}
+
+.dark {
+    @apply bg-dark;
+}
+
+.md {
+    @apply h-4 text-xs;
+}
+
+.lg {
+    @apply h-6;
+}
+
+.xl {
+    @apply h-8 text-lg;
+}
+
+.animation {
+    @apply bg-white bg-opacity-30 rotate-45 h-[calc(100%+10rem)] w-20 absolute left-0;
+    animation: progress 2s infinite linear;
+}
+
+@keyframes progress {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}
