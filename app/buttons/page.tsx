@@ -1,5 +1,6 @@
 import Button from "@ui/components/Button";
 import ButtonGroup from "@ui/components/ButtonGroup";
+import TextButton from "@ui/components/TextButton";
 import React from "react";
 
 export default function Page() {
@@ -121,6 +122,20 @@ export default function Page() {
         <Button pill color="dark">
           Dark
         </Button>
+      </div>
+
+      <h2 className="mx-auto">Text Button:</h2>
+
+      <div className="flex items-center justify-center w-full space-x-4">
+        <TextButton square color="primary">
+          Primary
+        </TextButton>
+        <TextButton color="secondary">Secondary</TextButton>
+        <TextButton color="success">Success</TextButton>
+        <TextButton color="info">Info</TextButton>
+        <TextButton color="warning">Warning</TextButton>
+        <TextButton color="error">Error</TextButton>
+        <TextButton color="dark">Dark</TextButton>
       </div>
 
       <h2 className="mx-auto">Sizes:</h2>

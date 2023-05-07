@@ -1,0 +1,55 @@
+.xs {
+    @apply px-4 py-0.5 text-sm font-semibold rounded-md;
+}
+
+.sm {
+    @apply px-6 py-1 text-sm font-semibold rounded-md;
+}
+
+.md {
+    @apply px-8 py-1.5 text-base font-semibold rounded-md;
+}
+
+.lg {
+    @apply px-10 py-2 text-lg font-semibold rounded-lg;
+}
+
+.xl {
+    @apply px-12 py-3 text-xl font-semibold rounded-lg;
+}
+
+.button {
+    @apply relative hover:bg-gray-200 overflow-hidden transition-all duration-300 flex items-center justify-center disabled:opacity-50 disabled:pointer-events-none disabled:select-none;
+}
+
+.primary {
+    @apply text-primary focus:ring-2 focus:ring-primary focus:ring-offset-2;
+}
+
+.secondary {
+    @apply text-secondary focus:ring-2 focus:ring-secondary focus:ring-offset-2;
+}
+
+.success {
+    @apply text-success focus:ring-2 focus:ring-success focus:ring-offset-2;
+}
+
+.error {
+    @apply text-error focus:ring-2 focus:ring-error focus:ring-offset-2;
+}
+
+.warning {
+    @apply text-warning focus:ring-2 focus:ring-warning focus:ring-offset-2;
+}
+
+.info {
+    @apply text-info focus:ring-2 focus:ring-info focus:ring-offset-2;
+}
+
+.dark {
+    @apply text-dark focus:ring-2 focus:ring-dark focus:ring-offset-2;
+}
+
+.square {
+    @apply rounded-none;
+}
