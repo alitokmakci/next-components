@@ -1,0 +1,3 @@
+.section {
+    @apply md:p-2 lg:p-3 xl:p-4 2xl:p-6;
+}
