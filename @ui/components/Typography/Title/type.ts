@@ -8,4 +8,10 @@ export interface TitleProps
   > {
   children: string;
   color?: UIColorPalette;
+  bold?: boolean;
+  semiBold?: boolean;
+  medium?: boolean;
+  italic?: boolean;
+  underline?: boolean;
+  lineThrough?: boolean;
 }
