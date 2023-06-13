@@ -7,12 +7,25 @@ export default function Title({
   children,
   className,
   color = "text",
+  bold,
+  semiBold,
+  medium,
+  italic,
+  underline,
+  lineThrough,
   ...props
 }: TitleProps) {
   return (
     <h1
       {...props}
-      className={classNames(className, styles.title, styles[color])}
+      className={classNames(className, styles.title, styles[color], {
+        [styles.bold]: bold,
+        [styles.semiBold]: semiBold,
+        [styles.medium]: medium,
+        [styles.italicText]: italic,
+        [styles.underlineText]: underline,
+        [styles.lineThrough]: lineThrough,
+      })}
     >
       {children}
     </h1>
