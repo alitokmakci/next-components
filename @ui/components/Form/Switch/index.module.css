@@ -1,0 +1,99 @@
+.switchWrapper {
+    @apply rounded-full bg-gray-200 w-16 h-8 inline-flex items-center relative transition-all duration-300 pointer-events-none;
+}
+
+.input {
+    @apply w-full h-full opacity-0 absolute cursor-pointer pointer-events-auto;
+}
+
+.square, .square .switch {
+    @apply !rounded-sm;
+}
+
+.primary:has(.input:checked) {
+    @apply bg-primary;
+}
+
+.secondary:has(.input:checked) {
+    @apply bg-secondary;
+}
+
+.success:has(.input:checked) {
+    @apply bg-success;
+}
+
+.warning:has(.input:checked) {
+    @apply bg-warning;
+}
+
+.error:has(.input:checked) {
+    @apply bg-error;
+}
+
+.info:has(.input:checked) {
+    @apply bg-info;
+}
+
+.dark:has(.input:checked) {
+    @apply bg-dark;
+}
+
+.xs {
+    @apply w-12 h-5;
+}
+
+.xs:has(.input:checked) .switch {
+    @apply left-8;
+}
+
+.xs .switch {
+    @apply w-3 h-3 rounded-full bg-white left-1 absolute transition-all duration-300;
+}
+
+.sm {
+    @apply w-14 h-6;
+}
+
+.sm:has(.input:checked) .switch {
+    @apply left-9;
+}
+
+.sm .switch {
+    @apply w-4 h-4 rounded-full bg-white left-1 absolute transition-all duration-300;
+}
+
+.md {
+    @apply w-16 h-8;
+}
+
+.md:has(.input:checked) .switch {
+    @apply left-9;
+}
+
+.md .switch {
+    @apply w-6 h-6 rounded-full bg-white left-1 absolute transition-all duration-300;
+}
+
+.lg {
+    @apply w-20 h-9;
+}
+
+.lg:has(.input:checked) .switch {
+    @apply left-12;
+}
+
+.lg .switch {
+    @apply w-7 h-7 rounded-full bg-white left-1 absolute transition-all duration-300;
+}
+
+.xl {
+    @apply w-24 h-10;
+}
+
+.xl:has(.input:checked) .switch {
+    @apply left-[3.75rem];
+}
+
+.xl .switch {
+    @apply w-8 h-8 rounded-full bg-white left-1 absolute transition-all duration-300;
+}
