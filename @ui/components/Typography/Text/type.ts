@@ -1,10 +1,10 @@
 import { UIColorPalette } from "@ui/ui";
 import React from "react";
 
-export interface ParagraphProps
+export interface TextProps
   extends React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLParagraphElement>,
-    HTMLParagraphElement
+    React.HTMLAttributes<HTMLSpanElement>,
+    HTMLSpanElement
   > {
   children: string;
   color?: UIColorPalette;

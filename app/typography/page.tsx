@@ -4,6 +4,7 @@ import Title from "@ui/components/Typography/Title";
 import React from "react";
 import Subtitle from "@ui/components/Typography/Subtitle";
 import Paragraph from "@ui/components/Typography/Paragraph";
+import Text from "@ui/components/Typography/Text";
 
 export default function Page() {
   return (
@@ -73,6 +74,45 @@ export default function Page() {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
           veniam.
         </Paragraph>
+      </Container>
+
+      <Container>
+        <Text>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
+          veniam.
+        </Text>
+        <Text color="primary">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
+          veniam.
+        </Text>
+        <Text color="secondary">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
+          veniam.
+        </Text>
+        <Text color="success">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
+          veniam.
+        </Text>
+        <Text color="warning">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
+          veniam.
+        </Text>
+        <Text color="error">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
+          veniam.
+        </Text>
+        <Text color="info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
+          veniam.
+        </Text>
+        <Text color="dark">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
+          veniam.
+        </Text>
+        <Text className="bg-dark" color="white">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
+          veniam.
+        </Text>
       </Container>
     </Section>
   );

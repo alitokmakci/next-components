@@ -1,5 +1,17 @@
+.paragraph {
+    @apply mb-3;
+}
+
 .subtitle {
     @apply text-lg lg:text-xl mb-2;
+}
+
+.text {
+    @apply mb-3;
+}
+
+.title {
+    @apply text-2xl lg:text-3xl font-semibold mb-4;
 }
 
 .text {
@@ -36,4 +48,28 @@
 
 .white {
     @apply text-white;
+}
+
+.bold {
+    @apply font-bold;
+}
+
+.semiBold {
+    @apply font-semibold
+}
+
+.medium {
+    @apply font-medium;
+}
+
+.italicText {
+    @apply italic;
+}
+
+.underlineText {
+    @apply underline;
+}
+
+.lineThrough {
+    @apply line-through;
 }

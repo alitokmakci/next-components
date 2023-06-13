@@ -3,8 +3,8 @@ import React from "react";
 
 export interface SubtitleProps
   extends React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLHeadingElement>,
-    HTMLHeadingElement
+    React.HTMLAttributes<HTMLParagraphElement>,
+    HTMLParagraphElement
   > {
   children: string;
   color?: UIColorPalette;

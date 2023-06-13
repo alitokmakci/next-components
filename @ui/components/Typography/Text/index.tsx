@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "../index.module.css";
 import classNames from "classnames";
-import { ParagraphProps } from "./type";
+import { TextProps } from "./type";
 
-export default function Paragraph({
+export default function Text({
   children,
   className,
   color = "text",
@@ -14,11 +14,11 @@ export default function Paragraph({
   underline,
   lineThrough,
   ...props
-}: ParagraphProps) {
+}: TextProps) {
   return (
-    <p
+    <span
       {...props}
-      className={classNames(className, styles.paragraph, styles[color], {
+      className={classNames(className, styles.text, styles[color], {
         [styles.bold]: bold,
         [styles.semiBold]: semiBold,
         [styles.medium]: medium,
@@ -28,6 +28,6 @@ export default function Paragraph({
       })}
     >
       {children}
-    </p>
+    </span>
   );
 }
