@@ -39,11 +39,11 @@
 }
 
 .xs {
-    @apply w-12 h-5;
+    @apply w-10 h-5;
 }
 
 .xs:has(.input:checked) .switch {
-    @apply left-8;
+    @apply left-6;
 }
 
 .xs .switch {
@@ -51,11 +51,11 @@
 }
 
 .sm {
-    @apply w-14 h-6;
+    @apply w-12 h-6;
 }
 
 .sm:has(.input:checked) .switch {
-    @apply left-9;
+    @apply left-7;
 }
 
 .sm .switch {
