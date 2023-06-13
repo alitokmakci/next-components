@@ -1,4 +1,5 @@
-import { UIColorWithWhite, UITextColor } from "@ui/ui";
+import { UIColorPalette } from "@ui/ui";
+import React from "react";
 
 export interface TitleProps
   extends React.DetailedHTMLProps<
@@ -6,5 +7,5 @@ export interface TitleProps
     HTMLHeadingElement
   > {
   children: string;
-  color?: UIColorWithWhite | UITextColor;
+  color?: UIColorPalette;
 }

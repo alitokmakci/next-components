@@ -11,6 +11,8 @@ export type UITextColor = UIColor | "text";
 
 export type UIColorWithWhite = UIColor | "white";
 
+export type UIColorPalette = UITextColor | UIColorWithWhite;
+
 export type UISizeUpMD = "md" | "lg" | "xl";
 
 export type UISizeDownMD = "xs" | "sm";
