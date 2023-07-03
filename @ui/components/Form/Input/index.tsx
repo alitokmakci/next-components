@@ -22,18 +22,11 @@ export default function Input({
       return;
     }
 
-    if (e.target.value === "") {
-      onValidationEvent?.(false);
-      onValidated?.("");
-
-      return;
-    }
-
     const result = validator(e.target.value);
 
     onValidationEvent?.(!result);
 
-    result ? onValidated?.(e.target.value) : onValidated?.("");
+    onValidated?.(result ? e.target.value : "");
   };
 
   return (

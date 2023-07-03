@@ -41,3 +41,11 @@ export interface UIConfig {
 // don't exist in R.  (It doesn't work if a key in L is an optional property in
 // R, which is why this is simplified)
 export type SimpleSpread<L, R> = R & Pick<L, Exclude<keyof L, keyof R>>;
+
+const theme = {
+  avatar: {
+    main: "inline-flex items-center justify-center rounded-md font-semibold tracking-wide relative",
+    sm: "w-10 h-10 text-lg",
+    xs: "",
+  },
+};

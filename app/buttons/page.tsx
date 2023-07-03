@@ -158,7 +158,6 @@ export default function Page() {
 
       <div className="flex items-center justify-center w-full space-x-4">
         <Button loading />
-        <Button size="md" loading />
         <Button size="xl" loading />
       </div>
 

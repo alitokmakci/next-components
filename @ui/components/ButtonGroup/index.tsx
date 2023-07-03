@@ -1,7 +1,23 @@
-import React from "react";
+import React, { cloneElement, useMemo } from "react";
 import { ButtonGroupProps } from "./type";
-import styles from "@ui/components/Button/index.module.css";
+import { ButtonProps } from "@ui/components/Button/type";
+import template from "@ui/components/Button/template";
 
 export default function ButtonGroup({ children }: ButtonGroupProps) {
-  return <div className={styles.btnGroup}>{children}</div>;
+  const buttons = useMemo(() => {
+    return children.map((child, index) =>
+      cloneElement(child, {
+        ...child.props,
+        groupPosition:
+          index === 0
+            ? "start"
+            : index ===
+              (children as React.ReactElement<ButtonProps>[]).length - 1
+            ? "end"
+            : "middle",
+      })
+    );
+  }, [children]);
+
+  return <div className={template.group.main}>{buttons}</div>;
 }

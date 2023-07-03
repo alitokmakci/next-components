@@ -15,4 +15,5 @@ export interface ButtonProps
   loading?: boolean;
   spinnerColor?: UIColorWithWhite;
   noRipple?: boolean;
+  groupPosition?: "start" | "middle" | "end";
 }

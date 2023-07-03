@@ -1,5 +1,6 @@
 import { ButtonProps } from "../Button/type";
+import React from "react";
 
 export interface ButtonGroupProps {
-  children: Array<React.ReactElement<ButtonProps>>;
+  children: React.ReactElement<ButtonProps>[];
 }
