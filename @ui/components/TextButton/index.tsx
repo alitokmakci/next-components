@@ -3,7 +3,7 @@ import { ButtonProps } from "./type";
 import classNames from "classnames";
 import styles from "./index.module.css";
 
-export default function Button({
+export default function TextButton({
   className,
   color = "primary",
   size = "md",

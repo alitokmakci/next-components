@@ -1,7 +1,12 @@
-import React, { ReactElement, ReactNode, useMemo } from "react";
+import React, { useMemo } from "react";
 import Container from "@ui/components/Container";
 import NavbarLogo from "@ui/components/Navbar/Logo";
-import { NavbarLogoProps } from "@ui/components/Navbar/Logo/type";
+import {
+  NavbarCenter,
+  NavbarLeft,
+  NavbarRight,
+} from "@ui/components/Navbar/Content";
+import NavbarItem from "@ui/components/Navbar/Item";
 
 export default function Navbar({
   children,
@@ -36,7 +41,7 @@ export default function Navbar({
 
   return (
     <div className="bg-gray-100 py-2 h-16">
-      <Container className="flex items-center justify-between">
+      <Container className="flex items-center justify-between h-full">
         <div>{left}</div>
         <div>{center}</div>
         <div>{right}</div>
@@ -46,3 +51,7 @@ export default function Navbar({
 }
 
 Navbar.Logo = NavbarLogo;
+Navbar.Left = NavbarLeft;
+Navbar.Center = NavbarCenter;
+Navbar.Right = NavbarRight;
+Navbar.Item = NavbarItem;

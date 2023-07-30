@@ -2,10 +2,8 @@
 import React, { useEffect, useId, useRef } from "react";
 import { DropdownItemProps, DropdownToggleProps } from "./type";
 import styles from "./index.module.css";
-import classNames from "classnames";
 import useClickOutside from "@ui/hooks/useClickOutside";
 import Link from "next/link";
-import useEvent from "@ui/hooks/useEvent";
 
 export default function Dropdown({ children }: { children: React.ReactNode }) {
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -16,21 +14,25 @@ export default function Dropdown({ children }: { children: React.ReactNode }) {
     }
 
     const dropdown = dropdownRef.current;
-    const toggler = dropdown.querySelector(".dropdown-toggle");
-    const menu = dropdown.querySelector(".dropdown-menu");
-    const menuItems = dropdown.querySelectorAll(".dropdown-item");
+    const toggle = dropdown.querySelector(
+      '[data-dropdown="@ui-dropdown-toggle"]'
+    );
+    const menu = dropdown.querySelector('[data-dropdown="@ui-dropdown-menu"]');
+    const menuItems = dropdown.querySelectorAll(
+      '[data-dropdown="@ui-dropdown-item"]'
+    );
 
     const clickListener = () => {
       menu?.classList.toggle(styles.show);
     };
 
-    toggler?.addEventListener("click", clickListener);
+    toggle?.addEventListener("click", clickListener);
     menuItems.forEach((item) => {
       item.addEventListener("click", clickListener);
     });
 
     return () => {
-      toggler?.removeEventListener("click", clickListener);
+      toggle?.removeEventListener("click", clickListener);
       menuItems.forEach((item) => {
         item.removeEventListener("click", clickListener);
       });
@@ -39,14 +41,18 @@ export default function Dropdown({ children }: { children: React.ReactNode }) {
 
   function handleClickOutsideMenu() {
     const dropdown = dropdownRef.current;
-    const menu = dropdown?.querySelector(".dropdown-menu");
+    const menu = dropdown?.querySelector('[data-dropdown="@ui-dropdown-menu"]');
     menu?.classList.remove(styles.show);
   }
 
   useClickOutside(dropdownRef, handleClickOutsideMenu);
 
   return (
-    <div ref={dropdownRef} className={styles.dropdown}>
+    <div
+      ref={dropdownRef}
+      data-dropdown="@ui-dropdown"
+      className={styles.dropdown}
+    >
       {children}
     </div>
   );
@@ -61,7 +67,8 @@ export function DropdownItem({ children, onClick, href }: DropdownItemProps) {
     <div
       onClick={onClick}
       role="presentation"
-      className={classNames("dropdown-item", styles.item)}
+      data-dropdown="@ui-dropdown-item"
+      className={styles.item}
     >
       {children}
     </div>
@@ -70,10 +77,17 @@ export function DropdownItem({ children, onClick, href }: DropdownItemProps) {
 
 export function DropdownMenu({ children }: { children: React.ReactNode }) {
   return (
-    <div className={classNames("dropdown-menu", styles.menu)}>{children}</div>
+    <div data-dropdown="@ui-dropdown-menu" className={styles.menu}>
+      {children}
+    </div>
   );
 }
 
 export function DropdownToggle({ children }: DropdownToggleProps) {
-  return <div className="dropdown-toggle">{children}</div>;
+  return (
+    <div data-dropdown="@ui-dropdown-toggle" className="cursor-pointer">
+      {children}
+      <i className="ri-arrow-drop-down-line" />
+    </div>
+  );
 }

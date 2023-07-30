@@ -1,5 +1,5 @@
 const buttonTemplate = {
-  main: "relative overflow-hidden transition-all duration-300 flex items-center justify-center disabled:opacity-50 disabled:pointer-events-none disabled:select-none",
+  main: "relative focus:ring-2 focus:ring-offset-2 overflow-hidden transition-all duration-300 flex items-center justify-center disabled:opacity-50 disabled:pointer-events-none disabled:select-none",
   sizes: {
     xs: "px-4 py-0.5 text-sm font-semibold rounded-md",
     sm: "px-6 py-1 text-sm font-semibold rounded-md;",
@@ -7,47 +7,44 @@ const buttonTemplate = {
     lg: "px-10 py-2 text-lg font-semibold rounded-lg",
     xl: "px-12 py-3 text-xl font-semibold rounded-lg",
   },
-  colors: {
-    primary:
-      "bg-primary text-white border border-primary hover:bg-opacity-80 active:bg-opacity-90 focus:ring-2 focus:ring-primary focus:ring-offset-2",
-    secondary:
-      "bg-secondary text-white border border-secondary hover:bg-opacity-80 active:bg-opacity-90 focus:ring-2 focus:ring-secondary focus:ring-offset-2",
-    success:
-      "bg-success text-white border border-success hover:bg-opacity-80 active:bg-opacity-90 focus:ring-2 focus:ring-success focus:ring-offset-2",
-    error:
-      "bg-error text-white border border-error hover:bg-opacity-80 active:bg-opacity-90 focus:ring-2 focus:ring-error focus:ring-offset-2",
-    warning:
-      "bg-warning text-white border border-warning hover:bg-opacity-80 active:bg-opacity-90 focus:ring-2 focus:ring-warning focus:ring-offset-2",
-    info: "bg-info text-white border border-info hover:bg-opacity-80 active:bg-opacity-90 focus:ring-2 focus:ring-info focus:ring-offset-2",
-    dark: "bg-dark text-white border border-dark hover:bg-opacity-80 active:bg-opacity-90 focus:ring-2 focus:ring-dark focus:ring-offset-2",
+  default: {
+    main: "text-white border hover:bg-opacity-80 active:bg-opacity-90",
+    colors: {
+      primary: "bg-primary border-primary focus:ring-primary",
+      secondary: "bg-secondary border-secondary focus:ring-secondary",
+      success: "bg-success border-success focus:ring-success",
+      error: "bg-error border-error focus:ring-error",
+      warning: "bg-warning border-warning focus:ring-warning",
+      info: "bg-info border-info focus:ring-info",
+      dark: "bg-dark border-dark focus:ring-dark",
+    },
   },
   bordered: {
-    main: "border bg-transparent",
+    main: "border bg-transparent hover:text-white",
     colors: {
       primary:
-        "border border-primary bg-transparent text-primary hover:bg-primary hover:text-white",
+        "border-primary text-primary hover:bg-primary focus:ring-primary",
       secondary:
-        "border border-secondary bg-transparent text-secondary hover:bg-secondary hover:text-white",
+        "border-secondary text-secondary hover:bg-secondary focus:ring-secondary",
       success:
-        "border border-success bg-transparent text-success hover:bg-success hover:text-white",
-      error:
-        "border border-error bg-transparent text-error hover:bg-error hover:text-white",
+        "border-success text-success hover:bg-success focus:ring-success",
+      error: "border-error text-error hover:bg-error focus:ring-error",
       warning:
-        "border border-warning bg-transparent text-warning hover:bg-warning hover:text-white",
-      info: "border border-info bg-transparent text-info hover:bg-info hover:text-white",
-      dark: "border border-dark bg-transparent text-dark hover:bg-dark hover:text-white",
+        "border-warning text-warning hover:bg-warning focus:ring-warning",
+      info: "border-info text-info hover:bg-info focus:ring-info",
+      dark: "border-dark text-dark hover:bg-dark focus:ring-dark",
     },
   },
   flat: {
     main: "bg-opacity-20 border-none hover:bg-opacity-40 active:bg-opacity-60",
     colors: {
-      primary: "text-primary",
-      secondary: "text-secondary",
-      success: "text-success",
-      error: "text-error",
-      warning: "text-warning",
-      info: "text-info",
-      dark: "text-dark",
+      primary: "bg-primary focus:ring-primary text-primary",
+      secondary: "bg-secondary focus:ring-secondary text-secondary",
+      success: "bg-success focus:ring-success text-success",
+      error: "bg-error focus:ring-error text-error",
+      warning: "bg-warning focus:ring-warning text-warning",
+      info: "bg-info focus:ring-info text-info",
+      dark: "bg-dark focus:ring-dark text-dark",
     },
   },
   square: "rounded-none",

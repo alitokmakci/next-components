@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useMemo } from "react";
 import AvatarProps from "./type";
 import classNames from "classnames";
-import styles from "./index.module.css";
 import Image from "next/image";
+import template from "./template";
 
 export default function Avatar({
   className,
@@ -18,27 +18,35 @@ export default function Avatar({
   dotPosition = "bottom-right",
   dotContent,
 }: AvatarProps) {
+  const avatarColor = useMemo(() => {
+    if (flat) {
+      return [template.flat.main, template.flat.colors[color]];
+    }
+
+    return [template.default.main, template.default.colors[color]];
+  }, [color, flat]);
   return (
     <div
       className={classNames(
         className,
-        styles.avatar,
-        styles[color],
-        styles[size],
+        template["main"],
+        template["sizes"][size],
+        avatarColor,
         {
-          [styles.flat]: flat,
-          [styles.square]: square,
-          [styles.circle]: circle,
+          [template.radius.square]: square,
+          [template.radius.circle]: circle,
+          [template.radius.default]: !square && !circle,
         }
       )}
     >
       {img ? (
         <Image
-          className={styles.img}
+          className={template.image}
           width={128}
           height={128}
           src={img}
           alt="avatar"
+          priority
         ></Image>
       ) : (
         <span>{letter}</span>
@@ -46,9 +54,9 @@ export default function Avatar({
       {dot && (
         <span
           className={classNames(
-            styles.dot,
-            styles[dotColor],
-            styles[dotPosition]
+            template.dot.main,
+            template.default.colors[dotColor],
+            template.dot.position[dotPosition]
           )}
         >
           {dotContent}

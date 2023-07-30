@@ -1,5 +1,5 @@
 "use client";
-import React, { forwardRef, useId } from "react";
+import React, { forwardRef, useId, useMemo } from "react";
 import { ButtonProps } from "./type";
 import classNames from "classnames";
 import Spinner from "@ui/components/Spinner";
@@ -45,6 +45,18 @@ export default forwardRef<HTMLButtonElement, ButtonProps>(function Button(
     return "white";
   }
 
+  const buttonColor = useMemo(() => {
+    if (flat) {
+      return [template.flat.colors[color], template.flat.main];
+    }
+
+    if (bordered) {
+      return [template.bordered.colors[color], template.bordered.main];
+    }
+
+    return [template.default.main, template.default.colors[color]];
+  }, [bordered, color, flat]);
+
   return (
     <button
       ref={ref}
@@ -54,12 +66,8 @@ export default forwardRef<HTMLButtonElement, ButtonProps>(function Button(
         className,
         template.main,
         template.sizes[size],
-        template.colors[color],
+        buttonColor,
         {
-          [template.bordered.main]: bordered,
-          [template.bordered.colors[color]]: bordered,
-          [template.flat.main]: flat,
-          [template.flat.colors[color]]: flat,
           [template.square]: square,
           [template.pill]: pill,
           [template.block]: block,

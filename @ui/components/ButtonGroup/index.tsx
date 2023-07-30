@@ -1,13 +1,14 @@
-import React, { cloneElement, useMemo } from "react";
+import React, { cloneElement, ReactNode, useMemo } from "react";
 import { ButtonGroupProps } from "./type";
 import { ButtonProps } from "@ui/components/Button/type";
 import template from "@ui/components/Button/template";
 
 export default function ButtonGroup({ children }: ButtonGroupProps) {
-  const buttons = useMemo(() => {
+  const buttons: ReactNode = useMemo(() => {
     return children.map((child, index) =>
       cloneElement(child, {
         ...child.props,
+        key: index,
         groupPosition:
           index === 0
             ? "start"

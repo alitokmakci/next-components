@@ -177,6 +177,21 @@ export default function Page() {
           <Button>Second button</Button>
           <Button>Third button</Button>
         </ButtonGroup>
+
+        <ButtonGroup>
+          <Button flat color="secondary">
+            First button
+          </Button>
+          <Button flat color="secondary">
+            Second button
+          </Button>
+          <Button flat color="secondary">
+            Third button
+          </Button>
+          <Button flat color="secondary">
+            Fourth button
+          </Button>
+        </ButtonGroup>
       </div>
     </div>
   );
